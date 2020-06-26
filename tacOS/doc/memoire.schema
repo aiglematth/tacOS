@@ -1,0 +1,17 @@
+#Auteur --> aiglematth
+
+#But --> On tente de faire un schema memoire de notre OS
+
+#0x1000 --> Bas de la pile  (place de esp en gros)
+#0x2000 --> Haut de la pile (place de ebp en gros)
+#0x7c00 --> Debut mbr
+#0x7e00 --> Fin mbr et début bootloader
+#0x8200 --> On est en mode protégé, on tente de passer en mode long
+#0x8600 --> On est en mode long
+
+#0x10000 --> On met en place les tables de pagination ici
+#0x14000 --> On compte large après notre pagination (qui finit vers 0x13000)
+
+#0x20000  --> Début de la bitMap
+#0x820000 --> Début de l'inode table
+#0xbe8000 --> Premier bloc file system
